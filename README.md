@@ -16,10 +16,11 @@ To use this action, create the following file in your GitHub repo:
 ```yml
 on: [issues, pull_request]
 jobs:
-  sync-labels:
+  apply-labels:
     runs-on: ubuntu-latest
-    name: Sync repository labels
+    name: Apply Origami labels to new issues and pull requests.
     steps:
+      - uses: actions/checkout@v2
       - uses: Financial-Times/origami-apply-labels@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
