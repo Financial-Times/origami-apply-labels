@@ -10,7 +10,7 @@ _See [origami-labels](https://github.com/Financial-Times/origami-labels) to sync
 To use this action, create the following file in your GitHub repo:
 
 ```
-.github/workflows/sync-repo-labels.yml
+.github/workflows/apply-labels.yml
 ```
 
 ```yml
@@ -28,7 +28,7 @@ jobs:
 You can do this by running the following command from a repo:
 
 ```bash
-mkdir -p .github/workflows && curl https://raw.githubusercontent.com/Financial-Times/origami-apply-labels/v1/example.yml --output .github/workflows/sync-repo-labels.yml
+mkdir -p .github/workflows && curl https://raw.githubusercontent.com/Financial-Times/origami-apply-labels/v1/example.yml --output .github/workflows/apply-labels.yml
 ```
 
 ## Labels Applied
