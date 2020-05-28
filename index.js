@@ -20,7 +20,7 @@ void async function () {
 			process.exit(0);
 		}
 		// Add an origami type label
-		const token = core.getInput("origami-fox-access-token", { required: true });
+		const token = core.getInput("github-token", { required: true });
 		const github = new GitHub(token);
 		if (origamiType) {
 			await github.issues.addLabels({
