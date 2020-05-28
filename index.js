@@ -5,7 +5,7 @@ const { context, GitHub } = require("@actions/github");
 void async function () {
 	try {
 		// Get and parse origami.json
-		const projectManifest;
+		let projectManifest;
 		try {
 			projectManifest = JSON.parse(fs.readFileSync("./origami.json", "utf-8"));
 		} catch(e) {
