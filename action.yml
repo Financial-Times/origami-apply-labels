@@ -1,0 +1,9 @@
+name: origami-apply-labels
+description: Apply Origami labels
+inputs:
+  github-token:
+    description: The GitHub token used to apply labels
+    required: true
+runs:
+  using: node12
+  main: index.js

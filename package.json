@@ -1,0 +1,24 @@
+{
+  "name": "@financial-times/origami-apply-labels",
+  "version": "0.0.0",
+  "description": "GitHub action to apply Origami labels to new issues and pull requests",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Financial-Times/origami-apply-labels.git"
+  },
+  "homepage": "https://github.com/Financial-Times/origami-apply-labels",
+  "bugs": "https://github.com/Financial-Times/origami-apply-labels/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6.9.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.0"
+  },
+  "devDependencies": {},
+  "main": "./index.js",
+  "scripts": {}
+}

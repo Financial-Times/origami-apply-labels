@@ -1,0 +1,12 @@
+{
+	"description": "GitHub action to apply Origami labels to new issues and pull requests",
+	"origamiType": null,
+	"origamiVersion": 1,
+	"keywords": [],
+	"support": "https://github.com/Financial-Times/origami-apply-labels/issues",
+	"supportStatus": "maintained",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/origami-support"
+	}
+}
