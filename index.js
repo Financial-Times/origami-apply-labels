@@ -11,8 +11,12 @@ void async function () {
 		} catch(e) {
 			throw new Error(`Could not parse "origami.json": ${e.message}`);
 		}
-		// Exit without error if there is no origami type defined
-		const origamiType = projectManifest.origamiType;
+		// Exit without error if there is no Origami type defined.
+		// The "component" type replaces the "module" type, the two are
+		// synonymous, so use a "component" label over a "module" label.
+		// https://github.com/Financial-Times/origami-website/pull/202
+		let origamiType = projectManifest.origamiType;
+		origamiType = origamiType === 'module' ? 'component' : origamiType;
 		if (!origamiType) {
 			core.warning(
 				`"${context.repo.repo}" has no "origamiType" defined in ` +
