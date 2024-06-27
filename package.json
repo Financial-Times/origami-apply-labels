@@ -11,8 +11,8 @@
   "bugs": "https://github.com/Financial-Times/origami-apply-labels/issues",
   "license": "MIT",
   "engines": {
-    "node": ">=12",
-    "npm": ">=6.9.0"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "dependencies": {
     "@actions/core": "^1.9.1",
